@@ -1,0 +1,118 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --dark: #383838;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #ececec;
+  --hospital-green: #a3daaa;
+
+  --border-radius: 10px;
+
+  --md: 0.8rem;
+  --lg: 1.6rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 1rem;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  height: calc(100vh - 40px);
+}
+
+.green__accent {
+  color: var(--hospital-green);
+}
+
+h1 {
+  text-align: center;
+  font-size: var(--lg);
+  font-weight: bolder;
+  margin-bottom: 1.5em;
+}
+
+form {
+  width: 100%;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 6px;
+}
+
+.form__container label {
+  font-size: var(--md);
+  font-weight: bolder;
+  margin-bottom: 4px;
+}
+
+.form__container input {
+  margin-bottom: 1rem;
+  height: 1.4rem;
+  padding: 1rem 0.5rem;
+  border-radius: var(--border-radius);
+  border: 1px var(--text-input-field) solid;
+  background-color: var(--text-input-field);
+  color: var(--dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+.remember__password {
+  text-align: center;
+  font-size: var(--md);
+  color: var(--hospital-green);
+}
+
+/* ----------- Button styles ------------- */
+.primary__button {
+  display: block;
+  border: none;
+  cursor: pointer;
+  background-color: var(--hospital-green);
+  color: var(--white);
+  padding: 1rem;
+  height: 50px;
+  border-radius: var(--border-radius);
+  font-weight: bolder;
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.signup {
+  position: fixed;
+  width: calc(100vw - 30px);
+  bottom: 2rem;
+}
+
+.alternative__button {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--md);
+  color: var(--hospital-green);
+  padding: 1rem;
+  height: 50px;
+  background-color: var(--white);
+  border: 2px var(--hospital-green) solid;
+  border-radius: var(--border-radius);
+}
+
+@media (min-width: 640px) {
+  /* --------- DESKTOP ------------- */
+}
