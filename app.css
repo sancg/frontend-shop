@@ -50,7 +50,7 @@ main {
 
 h1 {
   text-align: center;
-  font-size: var(--lg);
+  /* font-size: var(--lg); */
   font-weight: bolder;
 }
 
@@ -167,7 +167,12 @@ a {
 
 @media (min-width: 640px) {
   /* --------- DESKTOP ------------- */
-  .form__container {
-    margin: 0 5rem;
+  .headline {
+    display: none;
+  }
+
+  .signup {
+    position: inherit;
+    margin: 1.5rem auto;
   }
 }
