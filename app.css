@@ -8,6 +8,7 @@
 
   --border-radius: 10px;
 
+  --sm: 0.5rem;
   --md: 0.8rem;
   --lg: 1.6rem;
 }
@@ -21,7 +22,7 @@
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   margin: 1rem;
 }
 
@@ -32,6 +33,17 @@ main {
   height: calc(100vh - 40px);
 }
 
+.headline {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  margin-bottom: 1.3rem;
+}
+
+.headline img {
+  width: 30px;
+}
+
 .green__accent {
   color: var(--hospital-green);
 }
@@ -40,17 +52,12 @@ h1 {
   text-align: center;
   font-size: var(--lg);
   font-weight: bolder;
-  margin-bottom: 1.5em;
 }
 
-form {
+.form_ {
   width: 100%;
-}
-
-.form__container {
   display: flex;
   flex-direction: column;
-  margin: 0 6px;
 }
 
 .form__container label {
@@ -82,6 +89,7 @@ a {
 /* ----------- Button styles ------------- */
 .primary__button {
   display: block;
+  text-align: center;
   border: none;
   cursor: pointer;
   background-color: var(--hospital-green);
@@ -91,13 +99,7 @@ a {
   border-radius: var(--border-radius);
   font-weight: bolder;
   margin-top: 1rem;
-  margin-bottom: 1.3rem;
-}
-
-.signup {
-  position: fixed;
-  width: calc(100vw - 30px);
-  bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .alternative__button {
@@ -111,6 +113,44 @@ a {
   background-color: var(--white);
   border: 2px var(--hospital-green) solid;
   border-radius: var(--border-radius);
+}
+
+.signup {
+  position: fixed;
+  width: calc(100vw - 30px);
+  bottom: 2rem;
+}
+
+/* --------- EMAIL SEND ------------ */
+.form__container > p {
+  text-align: center;
+  font-size: var(--md);
+  color: var(--very-light-pink);
+}
+
+.body__message {
+  display: grid;
+  text-align: center;
+  place-items: center;
+  align-content: center;
+}
+
+.body__message .email__icon {
+  width: 150px;
+  height: 150px;
+  background-color: var(--text-input-field);
+  border-radius: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  /* padding: 5px; */
+}
+
+.body__message .body__text {
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+}
+.body__text p {
+  color: var(--very-light-pink);
 }
 
 @media (min-width: 640px) {
