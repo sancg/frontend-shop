@@ -21,8 +21,12 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 1rem;
 }
 
@@ -77,12 +81,15 @@ h1 {
   color: var(--dark);
 }
 
-/* .form__container input:focus {
-  border-color: aqua !important;
-} */
+.form__container__input {
+  display: flex;
+  flex-direction: column;
+}
 
-a {
-  text-decoration: none;
+.form__container__input h1 {
+  font-size: var(--lg);
+  text-align: start !important;
+  margin-bottom: 3rem;
 }
 
 .remember__password {
@@ -95,6 +102,7 @@ a {
 .primary__button {
   display: block;
   text-align: center;
+  width: 100%;
   border: none;
   cursor: pointer;
   background-color: var(--hospital-green);
@@ -105,12 +113,14 @@ a {
   font-weight: bolder;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  box-shadow: 4px 4px 0px 0px var(--dark);
 }
 
 .alternative__button {
   display: block;
   cursor: pointer;
   text-align: center;
+  width: 100%;
   font-size: var(--md);
   color: var(--hospital-green);
   padding: 1rem;
@@ -118,6 +128,7 @@ a {
   background-color: var(--white);
   border: 2px var(--hospital-green) solid;
   border-radius: var(--border-radius);
+  box-shadow: 4px 4px 0px 0px var(--hospital-green);
 }
 
 .signup {
