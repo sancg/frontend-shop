@@ -82,7 +82,7 @@ h1 {
   margin-bottom: 4px;
 }
 
-.form__container input {
+.form__container input, #user_name, #email, #pass{
   margin-bottom: 1rem;
   height: 1.4rem;
   height: 50px;
@@ -91,6 +91,11 @@ h1 {
   border: 1px var(--text-input-field) solid;
   background-color: var(--text-input-field);
   color: var(--dark);
+}
+
+.form__container__input {
+  display: flex;
+  flex-direction: column;
 }
 
 .form__container__input {
@@ -115,11 +120,12 @@ h1 {
   display: block;
   text-align: center;
   width: 100%;
+  font-size: var(--lg);
   border: none;
   cursor: pointer;
   background-color: var(--hospital-green);
   color: var(--white);
-  padding: 1rem;
+  /* padding: 1rem; */
   height: 50px;
   border-radius: var(--border-radius);
   font-weight: bolder;
@@ -133,9 +139,9 @@ h1 {
   cursor: pointer;
   text-align: center;
   width: 100%;
-  font-size: var(--md);
+  font-size: var(--lg);
   color: var(--hospital-green);
-  padding: 1rem;
+  /* padding: 1rem; */
   height: 50px;
   background-color: var(--white);
   border: 2px var(--hospital-green) solid;
@@ -200,7 +206,7 @@ h1 {
   }
 
   .signup {
-    position: inherit;
-    margin: 1.5rem auto;
+    position: initial;
+    margin: 2rem auto;
   }
 }
